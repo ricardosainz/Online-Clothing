@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans MT"
+}
+body{
+
+}
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+header nav ul{
+    background-color: black;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+header nav ul li {
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.link:hover{
+    color: #795786;
+}
+#logo{
+    width: 400px;
+    position: absolute;
+    padding-top: 15px;
+    margin: auto;
+}
+video{
+    width: 100%;
+    z-index: -1;
+}
+
+.apartados{
+    background: #eee8e8;
+}
+
+.slide-contenedor{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+.miSlider img{
+    width: 100%;
+    object-fit: cover;/*Para que la imagen no pierda mucha calidad*/
+    vertical-align: top;
+    transition: 4.5s;
+}
+.direcciones{
+    width: 100%;
+    height: 100%;
+    position: absolute;/*Para que se posicione dentro del elemento base(el contenedor)*/
+    top: 0;
+    display: flex;/*Utilizamos flexbox para colocar las flechas*/
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.direcciones a{
+    color: #795786;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.direcciones a:hover{/*Para que al pasar el ratón por encima de la flecha aparezca un cuadrado alrrededor*/
+    background: rgba(121, 87, 134, 0.5);
+    transition: .5s;
+}
+
+.barras{
+    position: absolute;/*Para que se posicione dentro del elemento padre(el contenedor)*/
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:15px;
+}
+.barra{
+    cursor: pointer;
+    height:2px;
+    width: 25px;
+    margin: 0 2px;
+    background: #dcdde1;
+    display: inline-block;
+    margin-left: 3px;
+}
+.active{/*Para que cuando esté activa aparezca con el color*/
+    background-color: #795786;
+}
+/*Animación para que al pasar de imagen haya un degradado*/
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
